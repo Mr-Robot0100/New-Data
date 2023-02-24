@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ccl1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ccl1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ccl1/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Sign-in</title>
+
+    <style>
+        
+        body{
+            background-image: linear-gradient(to right,rgb(179, 225, 231),rgb(6, 125, 141));
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        form{
+            padding: 10%;
+            padding-top: 5%;
+        }
+
+        #inputrollno,#inputEmail4,#inputNumber{
+            width: 65%;
+        }
+
+        #InputName{
+            width: 80%;
+            padding-right: 10px;
+        }
+
+        #inputYear{
+            width: 32%;
+        }
+
+        .form-row,.form-group{
+            padding-left: 10px;
+        }
+
+        
+        @media screen and (max-width: 700px) and (min-width:200px){
+               form{
+                   margin-left: 25%;
+               }
+              
+
+        #inputrollno,#inputEmail4,#inputNumber{
+            width: 65%;
+        }
+
+        #InputName{
+            width: 70%;
+        }
+
+        #inputYear{
+            width: 52%;
+        }   
+         
+
+        }
+
+        @media screen and (min-width:768px) and (max-width:1299px){
+ 
+          form{
+              padding-right: 10%;
+          }
+
+            
+        #inputrollno,#inputEmail4,#inputNumber{
+            width: 85%;
+        }
+
+        #InputName{
+            width: 120%;
+        }
+
+        #inputYear{
+            width: 42%;
+        }   
+         
+
+        }
+
+        @media screen and (min-width:1300px){
+
+            #inputrollno,#inputEmail4,#inputNumber{
+            width: 85%;
+        }
+
+        #InputName{
+            width: 130%;
+        }
+
+        #inputYear{
+            width: 42%;
+        }   
+         
+          
+        }
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <h1>Sign-in as Student</h1>
+    <form>
+        <div class="form-group col-md-4">
+            <label for="inputState">StudentName:</label>
+            <input type="text" class="form-control" id="InputName">
+        </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email:</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Roll.no:</label>
+            <input type="password" class="form-control" id="inputrollno">
+          </div>
+      
+        <div class="form-group">
+          <label for="branch-year">Branch-Year:</label>
+          <input type="number" class="form-control" id="inputYear" placeholder="eg.2019">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputMobile">Mobile No:</label>
+                <input type="number" class="form-control" id="inputNumber">
+            </div>
+        </div>
+        <div class="form-group">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+
+  </body>
+</html>
